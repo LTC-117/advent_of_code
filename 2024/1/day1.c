@@ -199,7 +199,7 @@ int diff(int a, int b)
 }
 
 
-void qs(int *item, int left, int right)
+void quick_sort(int *item, int left, int right)
 {
     register int i, j;
     int x, y;
@@ -222,15 +222,15 @@ void qs(int *item, int left, int right)
     } while(i <= j);
 
     if(left < j)
-        qs(item, left, j);
+        quick_sort(item, left, j);
     if(i < right)
-        qs(item, i, right);
+        quick_sort(item, i, right);
 }
 
 
 void quick(int *item, int count)
 {
-    qs(item, 0, count-1);
+    quick_sort(item, 0, count-1);
 }
 
 
