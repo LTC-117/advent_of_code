@@ -46,7 +46,7 @@ int main(void)
 {
     int safe = calculate_safety(reports);
 
-    printf("Amount of safe reports: %d\n", safe);
+    printf("Amount of safe reports (part 1): %d\n", safe);
 
     return 0;
 }
