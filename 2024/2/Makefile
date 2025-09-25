@@ -1,5 +1,5 @@
 all:
-	clang day2.c -o resposta
+	cc day2.c -o resposta
 
 run:
 	./resposta
