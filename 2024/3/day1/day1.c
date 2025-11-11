@@ -89,7 +89,7 @@ int main(void)
     int i = 0;
     FILE *fp;
 
-        if ((fp = fopen("./input.txt", "r")) == NULL) {
+    if ((fp = fopen("./input.txt", "r")) == NULL) {
         fprintf(stderr, "Can't open file! Check the file name being passed!\n");
         exit(EXIT_FAILURE);
     }
